@@ -3,12 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useBooking } from "./BookingProvider";
 
 
 export default function PageNavbar() {
   const [open, setOpen] = useState(false);
-  const { openBooking } = useBooking();
 
   return (
     <header className="sticky top-0 z-50 border-b border-brand-rose/20 bg-white/90 backdrop-blur-md">
@@ -47,13 +45,12 @@ export default function PageNavbar() {
           >
             +91 8122200767
           </a>
-          <button
-            type="button"
-            onClick={openBooking}
+          <a
+            href="/"
             className="inline-flex h-11 items-center justify-center rounded-full bg-brand-rust px-6 text-sm font-bold text-white shadow-lg shadow-brand-rust/25 transition-transform hover:-translate-y-0.5 hover:bg-brand-ink"
           >
-            Book Free Consultation
-          </button>
+            Back to Home
+          </a>
         </div>
 
         <button
@@ -82,7 +79,6 @@ export default function PageNavbar() {
       >
         <button
           type="button"
-          onClick={() => { setOpen(false); openBooking(); }}
           className="mt-2 inline-flex h-11 items-center justify-center rounded-full bg-brand-rust px-6 text-sm font-bold text-white shadow-lg shadow-brand-rust/25"
         >
           Book Free Consultation

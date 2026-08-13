@@ -31,7 +31,7 @@ function Stars({ size = 29 }: { size?: number }) {
   return (
     <div className="flex gap-1 text-[#f9c315]" aria-label="5 out of 5 stars">
       {Array.from({ length: 5 }).map((_, index) => (
-        <svg key={index} aria-hidden="true" style={{ width: size, height: size }} viewBox="0 0 24 24" fill="currentColor">
+        <svg key={index} aria-hidden="true" style={{ "--star-size": `${size}px` } as React.CSSProperties} className="size-[18px] sm:size-[var(--star-size)]" viewBox="0 0 24 24" fill="currentColor">
           <path d="m12 1.8 3.15 6.38 7.04 1.02-5.1 4.97 1.21 7.01L12 17.87l-6.3 3.31 1.21-7.01-5.1-4.97 7.04-1.02L12 1.8Z" />
         </svg>
       ))}
@@ -41,19 +41,19 @@ function Stars({ size = 29 }: { size?: number }) {
 
 export default function GoogleReviews() {
   return (
-    <section id="reviews" aria-label="Google patient reviews" className="overflow-hidden bg-white py-16 lg:py-20">
-      <h2 className="mb-10 text-center font-heading text-[28px] font-bold tracking-[0.08em] text-brand-ink max-lg:text-[36px] max-sm:text-[29px]">
+    <section id="reviews" aria-label="Google patient reviews" className="overflow-hidden bg-white py-6 lg:py-20">
+      <h2 className="mb-10 text-center font-heading text-[28px] font-bold tracking-[0.08em] text-brand-ink max-sm:mb-7 max-sm:text-[23px] max-sm:tracking-[0.05em]">
         ONE PATIENT LINE.
       </h2>
       <div className="mx-auto flex max-w-[1800px] flex-col items-center gap-10 px-5 sm:px-8 lg:flex-row lg:gap-12 lg:pl-16 lg:pr-0 xl:pl-20">
-        <div className="flex shrink-0 items-center gap-8 lg:w-[340px]">
-          <div className="text-center lg:text-left">
-            <div className="flex items-center gap-4 text-left">
-              <GoogleMark className="size-[82px]" />
-              <p className="font-heading text-[18px] leading-[1.5] font-semibold text-brand-ink lg:text-[20px]">3 Lakh +<br />verified ratings</p>
+        <div className="flex w-full shrink-0 items-center justify-center gap-8 lg:w-[340px] lg:justify-start">
+          <div className="w-full max-w-[340px] text-center lg:text-left">
+            <div className="flex items-center justify-center gap-4 text-left lg:justify-start">
+              <GoogleMark className="size-[68px] sm:size-[82px]" />
+              <p className="font-heading text-[16px] leading-[1.45] font-semibold text-brand-ink sm:text-[18px] lg:text-[20px]">3 Lakh +<br />verified ratings</p>
             </div>
-            <div className="mt-2 ml-[98px]"><Stars size={21} /></div>
-            <p className="mt-4 whitespace-nowrap font-sans text-[24px] tracking-[-.03em] text-brand-ink/90 lg:text-[27px]">Average rating of 4.9</p>
+            <div className="mt-3 flex justify-center pl-[82px] lg:justify-start lg:pl-[98px]"><Stars size={21} /></div>
+            <p className="mt-5 whitespace-nowrap text-center font-sans text-[19px] tracking-[-.03em] text-brand-ink/90 sm:text-[24px] lg:text-left lg:text-[27px]">Average rating of 4.9</p>
           </div>
           <span className="hidden h-[170px] w-px shrink-0 bg-brand-rose/65 lg:block" />
         </div>
@@ -64,10 +64,10 @@ export default function GoogleReviews() {
               <div className="absolute top-0 right-0 grid size-[84px] place-items-center rounded-bl-full bg-brand-rose/20">
                 <GoogleMark className="size-[36px] -translate-y-1.5 translate-x-1.5" />
               </div>
-              <div className="mx-auto grid size-16 place-items-center rounded-full border border-brand-rust bg-brand-rose/15 font-heading text-[24px] font-semibold text-brand-ink">{review.initials}</div>
-              <h3 className="mt-5 text-center font-heading text-[18px] font-bold text-brand-ink">{review.name}</h3>
+              <div className="mx-auto grid size-14 place-items-center rounded-full border border-brand-rust bg-brand-rose/15 font-heading text-[20px] font-semibold text-brand-ink sm:size-16 sm:text-[24px]">{review.initials}</div>
+              <h3 className="mt-4 text-center font-heading text-[16px] font-bold text-brand-ink sm:mt-5 sm:text-[18px]">{review.name}</h3>
               <div className="mt-3 flex justify-center"><Stars size={23} /></div>
-              <p className="mt-4 font-sans text-[15.5px] leading-[1.65] tracking-[-.012em] text-brand-ink/85">{review.review}</p>
+              <p className="mt-4 font-sans text-[14px] leading-[1.6] tracking-[-.012em] text-brand-ink/85 sm:text-[15.5px] sm:leading-[1.65]">{review.review}</p>
             </article>
           ))}
         </div>

@@ -46,7 +46,7 @@ export default function Header() {
         <button
           type="button"
           onClick={openBooking}
-          className="inline-flex h-[43px] min-w-[175px] items-center justify-center whitespace-nowrap rounded-[5px] bg-brand-rust px-[15px] font-sans text-[15px] leading-none font-medium text-white no-underline max-[640px]:hidden"
+          className="inline-flex h-[43px] min-w-[175px] items-center justify-center whitespace-nowrap rounded-full bg-brand-rust px-[15px] font-sans text-[15px] leading-none font-medium text-white no-underline max-[640px]:hidden"
         >
           Book Appointment
         </button>

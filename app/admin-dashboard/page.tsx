@@ -3,6 +3,7 @@
 "use client"
 
 import { useState, useEffect, Fragment } from "react"
+import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -416,6 +417,15 @@ const formatFormName = (formName: string | null | undefined) => {
   return formDisplayNames[formName.toLowerCase()] || formDisplayNames.default
 }
 
+  const parseAppointment = (message: string | null | undefined) => {
+    const value = message || ""
+    return {
+      date: value.match(/Appointment date:\s*([^\n]+)/i)?.[1]?.trim(),
+      time: value.match(/Appointment time:\s*([^\n]+)/i)?.[1]?.trim(),
+      consultation: value.match(/Consultation type:\s*([^\n]+)/i)?.[1]?.trim(),
+    }
+  }
+
   // Helper function to open URL in new tab
   const openUrl = (url: string | null | undefined) => {
     if (url) {
@@ -424,30 +434,36 @@ const formatFormName = (formName: string | null | undefined) => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 p-4">
-      <Card className="w-full bg-white border-gray-200">
-        <CardHeader className="border-b border-gray-200">
+    <div className="min-h-screen bg-[#f8f3f1] p-3 text-[#3a2e29] sm:p-6">
+      <Card className="mx-auto w-full max-w-[1600px] overflow-hidden border-[#be9485]/35 bg-white shadow-[0_20px_60px_rgba(58,46,41,.1)]">
+        <CardHeader className="border-b border-[#be9485]/25 bg-gradient-to-r from-white via-[#f8f3f1] to-[#be9485]/15">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-            <div>
-              <CardTitle className="text-2xl font-bold text-gray-900">Leads Management</CardTitle>
-              <CardDescription className="text-gray-600">
-                Manage and track all consultation requests from your website forms
+            <div className="flex items-center gap-4">
+              <div className="grid h-16 w-28 place-items-center rounded-2xl border border-[#be9485]/30 bg-white px-2 shadow-sm">
+                <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786612791/logos.png" alt="Alpha Dental Studio" width={108} height={63} className="h-auto w-[92px]" />
+              </div>
+              <div>
+              <p className="mb-1 text-xs font-bold uppercase tracking-[.2em] text-[#963720]">Alpha Dental Studio</p>
+              <CardTitle className="text-2xl font-bold text-[#3a2e29] sm:text-3xl">Appointment Dashboard</CardTitle>
+              <CardDescription className="text-[#3a2e29]/60">
+                Manage and track patient consultation requests
                 {autoRefresh && <span className="ml-2 text-xs text-green-600">• Auto-refresh enabled</span>}
               </CardDescription>
+              </div>
             </div>
             <div className="flex gap-2">
               <Button 
                 variant="outline" 
                 onClick={fetchLeads} 
                 disabled={loading}
-                className="flex items-center gap-2 border-gray-300 text-gray-700 hover:bg-gray-50"
+                className="flex items-center gap-2 border-[#be9485]/50 text-[#3a2e29] hover:bg-[#f8f3f1]"
               >
                 <RefreshCw className={`h-4 w-4 ${loading ? 'animate-spin' : ''}`} />
                 {loading ? 'Refreshing...' : 'Refresh'}
               </Button>
               <Button 
                 onClick={exportToCSV} 
-                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white"
+                className="flex items-center gap-2 bg-[#963720] text-white hover:bg-[#3a2e29]"
               >
                 <Download className="h-4 w-4" />
                 Export CSV
@@ -460,11 +476,11 @@ const formatFormName = (formName: string | null | undefined) => {
           {/* Form Statistics */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
 {Object.entries(formStats).map(([formName, stats]) => (
-  <Card key={formName} className="p-4 bg-white border-gray-200 shadow-sm">
+  <Card key={formName} className="border-[#be9485]/30 bg-[#f8f3f1]/70 p-4 shadow-sm">
     <div className="flex items-center justify-between">
       <div>
         <div className="flex items-center gap-2 mb-2">
-          <FileText className="h-4 w-4 text-blue-600" />
+          <FileText className="h-4 w-4 text-[#963720]" />
           <span className="font-medium text-sm text-gray-900 capitalize">
             {formName === 'hairtreatment' ? 'Hair Treatment' : 
              formName === 'skin and hair leads' ? 'Skin & Hair' : 
@@ -613,10 +629,10 @@ const formatFormName = (formName: string | null | undefined) => {
           </div>
 
           {/* Table */}
-          <div className="rounded-lg border border-gray-200 overflow-hidden">
+          <div className="overflow-hidden rounded-xl border border-[#be9485]/30">
             <div className="relative w-full overflow-auto">
               <table className="w-full caption-bottom text-sm">
-                <thead className="bg-gray-50 border-b border-gray-200">
+                <thead className="border-b border-[#be9485]/30 bg-[#f8f3f1]">
                   <tr>
                     <th 
                       className="h-12 px-4 text-left align-middle font-medium text-gray-700 cursor-pointer hover:bg-gray-100 transition-colors"
@@ -877,10 +893,17 @@ const formatFormName = (formName: string | null | undefined) => {
                                     </div>
                                   </div>
                                   <div>
-                                    <h4 className="font-medium text-gray-900 mb-2">Message</h4>
-                                    <p className="text-gray-700 bg-white p-3 rounded border border-gray-200">
-                                      {lead.message || "No message provided"}
-                                    </p>
+                                    <h4 className="mb-3 font-semibold text-[#3a2e29]">Appointment Details</h4>
+                                    {(() => {
+                                      const appointment = parseAppointment(lead.message)
+                                      return appointment.date || appointment.time || appointment.consultation ? (
+                                        <div className="grid gap-3 sm:grid-cols-3 md:grid-cols-1 xl:grid-cols-3">
+                                          <div className="rounded-xl border border-[#be9485]/30 bg-white p-3"><span className="block text-[11px] font-bold uppercase tracking-wider text-[#963720]">Date</span><strong className="mt-1 block text-[#3a2e29]">{appointment.date || "Not selected"}</strong></div>
+                                          <div className="rounded-xl border border-[#be9485]/30 bg-white p-3"><span className="block text-[11px] font-bold uppercase tracking-wider text-[#963720]">Time</span><strong className="mt-1 block text-[#3a2e29]">{appointment.time || "Not selected"}</strong></div>
+                                          <div className="rounded-xl border border-[#be9485]/30 bg-white p-3"><span className="block text-[11px] font-bold uppercase tracking-wider text-[#963720]">Consultation</span><strong className="mt-1 block text-[#3a2e29]">{appointment.consultation || lead.procedure || "Not specified"}</strong></div>
+                                        </div>
+                                      ) : <p className="rounded-xl border border-[#be9485]/30 bg-white p-3 text-[#3a2e29]/70">{lead.message || "No message provided"}</p>
+                                    })()}
                                   </div>
                                 </div>
                               </td>

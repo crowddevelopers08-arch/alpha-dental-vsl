@@ -6,6 +6,7 @@ import SmileJourney from "@/component/SmileJourney";
 import GoogleReviews from "@/component/GoogleReviews";
 import AppointmentBanner from "@/component/AppointmentBanner";
 import ScrollReveal from "@/component/ScrollReveal";
+import ContactFooter from "@/component/ContactFooter";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <AiSmileBanner />
       <GoogleReviews />
       <AppointmentBanner />
+      <ContactFooter />
     </main>
   );
 }

@@ -6,7 +6,7 @@ import { useBooking } from "./BookingProvider";
 export default function AppointmentBanner() {
   const { openBooking } = useBooking();
   return (
-    <section id="book-appointment" aria-label="Book a dental appointment" className="relative overflow-hidden bg-[#f8f3f1] px-4 pb-20 pt-16 sm:px-6 xl:px-6 xl:pt-[130px]">
+    <section id="book-appointment" aria-label="Book a dental appointment" className="relative overflow-hidden bg-[#f8f3f1] px-4 pb-10 pt-10 sm:px-6 xl:px-6 xl:pt-[130px]">
       <div className="relative mx-auto min-h-[298px] w-full max-w-[1684px] overflow-visible rounded-[26px] border border-brand-rose/60 bg-[#f8f3f1]">
         <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[25px]">
           <div className="absolute inset-y-0 right-0 w-[36%] bg-brand-rose" />

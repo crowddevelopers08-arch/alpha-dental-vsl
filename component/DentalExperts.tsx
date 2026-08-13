@@ -20,15 +20,15 @@ const cards = [
 
 export default function DentalExperts() {
   return (
-    <section id="treatments" className="bg-[#f8f3f1] px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
+    <section id="treatments" className="bg-[#f8f3f1] px-5 py-6 sm:px-8 lg:px-12 lg:py-20">
       <div className="mx-auto max-w-[1650px]">
         <div className="text-center text-brand-ink">
-          <h2 className="font-heading text-[34px] leading-tight font-bold tracking-[-0.7px] max-sm:text-[28px]">
+          <h2 className="font-heading text-[34px] leading-tight font-bold tracking-[-0.7px] max-sm:text-[24px] max-sm:tracking-[-0.35px]">
             THINGS WE FIX
           </h2>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className="mt-10 max-sm:mt-5 grid grid-cols-1 gap-6 max-sm:gap-3 lg:grid-cols-3">
           {cards.map((card) => (
             <article
               key={card.title}
@@ -42,17 +42,17 @@ export default function DentalExperts() {
                 className="size-[82px] shrink-0 object-contain max-sm:size-[68px]"
               />
               <div className="min-w-0 text-brand-ink">
-                <h3 className="font-heading text-[20px] leading-tight font-bold tracking-[-0.35px]">
+                <h3 className="font-heading text-[20px] leading-tight font-bold tracking-[-0.35px] max-sm:text-[17px]">
                   {card.title}
                 </h3>
-                <p className="mt-[11px] font-sans text-[16px] leading-[1.55] font-normal">
+                <p className="mt-[11px] font-sans text-[16px] leading-[1.55] font-normal max-sm:mt-2 max-sm:text-[14px] max-sm:leading-[1.5]">
                   {card.description}
                 </p>
               </div>
             </article>
           ))}
         </div>
-        <div className="mt-[30px] text-center text-brand-rust font-sans text-[16px] leading-[1.55] font-normal">
+        <div className="mt-[30px] text-center font-sans text-[16px] leading-[1.55] font-normal text-brand-rust max-sm:text-[14px]">
           <p> Led by 9 specialist dentists. Not generalists .</p>
         </div>
       </div>
