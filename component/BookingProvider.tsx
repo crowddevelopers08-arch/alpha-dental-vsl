@@ -89,11 +89,11 @@ export default function BookingProvider({ children }: { children: ReactNode }) {
     <BookingContext.Provider value={{ openBooking: () => setOpen(true) }}>
       {children}
       {open && (
-        <div className="fixed inset-0 z-[100] grid place-items-center overflow-hidden bg-transparent p-3 sm:p-4" role="dialog" aria-modal="true" aria-label="Book a free consultation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
+        <div className="fixed inset-0 z-[100] grid place-items-center overflow-hidden bg-transparent p-3 sm:p-4" role="dialog" aria-modal="true" aria-label="Book a  consultation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
           <div className="relative w-full max-w-5xl overflow-hidden rounded-[28px] bg-white shadow-[0_30px_100px_rgba(30,20,15,.3)]">
             <button type="button" onClick={close} aria-label="Close booking" className="absolute top-4 right-4 z-10 grid size-10 place-items-center rounded-full bg-brand-ink text-2xl text-white">×</button>
             <div className="border-b border-brand-rose/25 px-6 py-4 sm:px-8 sm:py-5">
-              <p className="text-xs font-bold uppercase tracking-[.18em] text-brand-rust">Free consultation</p>
+              <p className="text-xs font-bold uppercase tracking-[.18em] text-brand-rust">Book consultation</p>
               <h2 className="mt-2 font-heading text-3xl font-bold text-brand-ink">{step === "schedule" ? "Choose your appointment" : "Tell us about yourself"}</h2>
               <p className="mt-2 text-sm text-brand-ink/60">Alpha Dental Studio · RA Puram · Mon–Sat, 10 AM–8 PM</p>
             </div>

@@ -19,11 +19,11 @@ export default function AppointmentBanner() {
             Your first step costs nothing but 20 minutes.
           </h2>
           <p className="mt-8 max-w-[820px] font-sans text-[16px] leading-relaxed text-brand-ink/85 sm:text-[18px] xl:mt-12 xl:text-[20px]">
-            Book a free consultation. We&apos;ll show you your options — honestly.
+            Book a free consultation. We&apos;ll show you your options honestly.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4 sm:mt-12">
             <button type="button" onClick={openBooking} className="inline-flex h-[47px] items-center rounded-full border border-brand-rust bg-brand-rust px-6 font-heading text-[16px] font-semibold text-white transition hover:-translate-y-0.5 hover:bg-brand-ink">
-              Book Free Consultation →
+              Book Your Consultation →
             </button>
             <a href="tel:+918122200767" className="font-sans text-[14px] font-semibold text-brand-ink transition hover:text-brand-rust sm:text-[15px]">
                +91 8122200767 · Mon–Sat, 10 AM–8 PM

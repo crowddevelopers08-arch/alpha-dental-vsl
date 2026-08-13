@@ -81,7 +81,7 @@ export default function PageNavbar() {
           type="button"
           className="mt-2 inline-flex h-11 items-center justify-center rounded-full bg-brand-rust px-6 text-sm font-bold text-white shadow-lg shadow-brand-rust/25"
         >
-          Book Free Consultation
+          Book Consultation
         </button>
       </div>
     </header>

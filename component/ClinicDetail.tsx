@@ -137,11 +137,13 @@ export default function ClinicDetail() {
           </div>
 
           <div className="relative hidden overflow-hidden rounded-bl-[14px] bg-[#edf1ef] sm:col-span-2 lg:col-span-2 lg:block">
-            <div className="absolute inset-0 opacity-70 [background-image:linear-gradient(28deg,transparent_43%,#d2dcda_44%,#d2dcda_47%,transparent_48%),linear-gradient(112deg,transparent_43%,#fff_44%,#fff_48%,transparent_49%)] [background-size:95px_75px]" />
-            <div className="absolute left-[57%] top-[42%] -translate-x-1/2 -translate-y-1/2 text-center">
-              <span className="mx-auto grid size-7 place-items-center rounded-full bg-brand-rust text-sm text-white shadow">●</span>
-              <span className="mt-1 block whitespace-nowrap rounded bg-white/90 px-2 py-1 text-[10px] font-semibold text-brand-rust shadow-sm">Alpha Dental Studio<br />RA Puram</span>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.711236357408!2d80.2641285!3d13.024299699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267fe2b4e48af%3A0x2fad03f83ec90c76!2sAlpha%20Dental%20Studio!5e1!3m2!1sen!2sin!4v1786636617879!5m2!1sen!2sin"
+              className="absolute inset-0 h-full w-full border-0"
+              title="Alpha Dental Studio location"
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
           </div>
         </div>
       </div>
