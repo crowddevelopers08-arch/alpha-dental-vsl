@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Lead {
+  id            String   @id @default(cuid())
+  name          String
+  phone         String
+  email         String?
+  treatment     String?
+  procedure     String?
+  message       String?
+  city          String?
+  age           String?
+  pincode       String?
+  consent       Boolean  @default(false)
+  source        String   @default("Website")
+  formName      String   @default("Website Leads")
+  status        String   @default("new")
+  telecrmSynced Boolean  @default(false)
+  telecrmId     String?
+  pageUrl       String?
+  referrerUrl   String?
+  area          String?
+  location      String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([createdAt])
+  @@index([status])
+  @@index([formName])
+  @@index([phone])
+}
