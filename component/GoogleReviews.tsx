@@ -2,7 +2,7 @@ const reviews = [
   {
     initials: "G",
     name: "Gokul",
-    review: "My implant treatment finished on time, exactly as planned — and cheaper than other clinics in the city.",
+    review: "My implant treatment finished on time, exactly as planned and cheaper than other clinics in the city.",
   },
   {
     initials: "SK",

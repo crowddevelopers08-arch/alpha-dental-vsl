@@ -19,7 +19,7 @@ export default function AiSmileBanner() {
             </p>
             <p className="flex items-start gap-3">
               <span className="mt-[0.62em] size-2 shrink-0 rounded-full bg-brand-rust" />
-              <span>This video shows you exactly what&apos;s wrong, what it costs, and what to expect — before you sit in any chair.</span>
+              <span>This video shows you exactly what&apos;s wrong, what it costs, and what to expect before you sit in any chair.</span>
             </p>
           </div>
           <button
