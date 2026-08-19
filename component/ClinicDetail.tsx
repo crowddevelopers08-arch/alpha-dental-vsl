@@ -118,7 +118,7 @@ export default function ClinicDetail() {
 
           <div className="mt-5 space-y-5 text-[17px] text-brand-ink">
             <div className="flex items-center gap-4"><ClockIcon /><span>10:00:00 - 08:00:00 <b className="font-semibold">(Closed on Sun)</b></span></div>
-            <div className="flex items-start gap-4"><PinIcon /><div><p>Plot Number 65, First Floor, Old Door Number 2/4, Thiruvengadam Street, Chennai, Tamil Nadu 600028</p><a className="mt-4 inline-block font-medium text-brand-rust " rel="noreferrer">+91 8122200767 |  info@alphadentalstudios.com</a></div></div>
+            <div className="flex items-start gap-4"><PinIcon /><div><p>Plot Number 65, First Floor, Old Door Number 2/4, Thiruvengadam Street, Chennai, Tamil Nadu 600028</p><a className="mt-4 inline-block font-medium text-brand-rust " rel="noreferrer">+91 8122200767</a></div></div>
           </div>
 
           <div className="mt-6 flex flex-wrap items-center gap-8 sm:gap-[15px]">
