@@ -71,11 +71,11 @@ export default function BeforeAfterCarousel() {
           <div className="mx-auto max-w-3xl text-center">
             <h2
               id="smile-results-title"
-              className={`mt-3 font-heading text-3xl leading-tight font-bold tracking-[-1.5px] text-brand-ink transition-all delay-700 duration-[1200ms] ease-out motion-reduce:transform-none motion-reduce:opacity-100 sm:text-4xl lg:text-[52px] lg:leading-[1.1] lg:tracking-[-2px] ${revealed ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+              className={`mt-3 font-heading uppercase text-[34px] leading-tight font-bold tracking-[-1.5px] text-brand-ink transition-all delay-700 duration-[1200ms] ease-out motion-reduce:transform-none motion-reduce:opacity-100 max-sm:text-[24px] max-sm:tracking-[-0.35px] ${revealed ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
-              Smiles transformed at Alpha
+              Smiles Transformed At Alpha
             </h2>
-            <p className={`mx-auto mt-3 max-w-xl text-sm leading-6 text-brand-ink/60 transition-all delay-[1050ms] duration-[1200ms] ease-out motion-reduce:transform-none motion-reduce:opacity-100 ${revealed ? "translate-y-0 opacity-100" : "translate-y-7 opacity-0"}`}>
+            <p className={`mx-auto mt-3 max-w-xl text-md leading-6 text-brand-ink/60 transition-all delay-[1050ms] duration-[1200ms] ease-out motion-reduce:transform-none motion-reduce:opacity-100 ${revealed ? "translate-y-0 opacity-100" : "translate-y-7 opacity-0"}`}>
               Real before and after results from treatments at our RA Puram studio.
             </p>
           </div>

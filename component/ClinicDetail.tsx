@@ -69,7 +69,7 @@ export default function ClinicDetail() {
           </p>
 
           <h1 className="max-w-[610px] font-heading text-[38px] leading-[1.13] font-semibold tracking-[-1.15px] text-brand-ink max-sm:text-[32px]">
-            Missing teeth, a broken smile, or a tooth that won't stop hurting? Watch this before you pick a dentist.
+            Missing teeth, a Broken Smile, or a Tooth That Won't Stop Hurting? Watch this before you pick a dentist.
           </h1>
 
           <div className="mt-7 overflow-hidden rounded-[14px] bg-white shadow-[0_8px_30px_rgba(58,46,41,0.12)] xl:hidden">
@@ -118,7 +118,7 @@ export default function ClinicDetail() {
 
           <div className="mt-5 space-y-5 text-[17px] text-brand-ink">
             <div className="flex items-center gap-4"><ClockIcon /><span>10:00:00 - 08:00:00 <b className="font-semibold">(Closed on Sun)</b></span></div>
-            <div className="flex items-start gap-4"><PinIcon /><div><p>Plot Number 65, First Floor, Old Door Number 2/4, Thiruvengadam Street, Chennai, Tamil Nadu 600028</p><a className="mt-4 inline-block font-medium text-brand-rust " rel="noreferrer">+91 8122200767</a></div></div>
+            <div className="flex items-start gap-4"><PinIcon /><div><p>Plot Number 65, First Floor, Old Door Number 2/4, Thiruvengadam Street, Chennai, Tamil Nadu 600028</p></div></div>
           </div>
 
           <div className="mt-6 flex flex-wrap items-center gap-8 sm:gap-[15px]">
