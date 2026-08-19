@@ -30,19 +30,20 @@ export default function ContactFooter() {
             </address>
 
             <address className="not-italic">
-              <h2 className="mb-1 font-heading text-[18px] font-bold sm:text-[20px]">Kottivakkam Branch</h2>
-              <p>No 2, 311, AGS Colony, 2nd Main Rd, Kannappa Nagar, Kottivakkam, Chennai, Tamil Nadu 600041</p>
-              <p className="mt-3 break-words font-semibold text-brand-rust">
+              {/* <h2 className="mb-1 font-heading text-[18px] font-bold sm:text-[20px]">Kottivakkam Branch</h2> */}
+              {/* <p>No 2, 311, AGS Colony, 2nd Main Rd, Kannappa Nagar, Kottivakkam, Chennai, Tamil Nadu 600041</p> */}
+              {/* <p className="mt-3 break-words font-semibold text-brand-rust">
                 <a href="tel:+918637438826">+91 863 743 8826</a>
                 <span> | </span>
                 <a href="mailto:info@alphadentalstudios.com">info@alphadentalstudios.com</a>
-              </p>
+              </p> */}
             </address>
 
             <p>
-              Follow Us: <a className="text-brand-rust hover:underline" href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
-              <span> | </span>
-              <a className="text-brand-rust hover:underline" href="https://www.instagram.com/alphadentalstudios/" target="_blank" rel="noreferrer">Instagram</a>
+              Follow Us: 
+               <span className="ml-1"> 
+                     <a className="text-brand-rust hover:underline" href="https://www.instagram.com/alphadentalstudios/" target="_blank" rel="noreferrer">Instagram</a>
+             </span>
             </p>
           </div>
         </div>

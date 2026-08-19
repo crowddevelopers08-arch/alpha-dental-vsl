@@ -50,10 +50,10 @@ export default function GoogleReviews() {
           <div className="w-full max-w-[340px] text-center lg:text-left">
             <div className="flex items-center justify-center gap-4 text-left lg:justify-start">
               <GoogleMark className="size-[68px] sm:size-[82px]" />
-              <p className="font-heading text-[16px] leading-[1.45] font-semibold text-brand-ink sm:text-[18px] lg:text-[20px]">3 Lakh +<br />verified ratings</p>
+              <p className="font-heading text-[16px] leading-[1.45] font-semibold text-brand-ink sm:text-[18px] lg:text-[20px]">Verified Ratings</p>
             </div>
             <div className="mt-3 flex justify-center pl-[82px] lg:justify-start lg:pl-[98px]"><Stars size={21} /></div>
-            <p className="mt-5 whitespace-nowrap text-center font-sans text-[19px] tracking-[-.03em] text-brand-ink/90 sm:text-[24px] lg:text-left lg:text-[27px]">Average rating of 4.9</p>
+            <p className="mt-5 whitespace-nowrap text-center font-sans text-[19px] tracking-[-.03em] text-brand-ink/90 sm:text-[24px] lg:text-left lg:text-[27px]">Average rating of 5.0</p>
           </div>
           <span className="hidden h-[170px] w-px shrink-0 bg-brand-rose/65 lg:block" />
         </div>
