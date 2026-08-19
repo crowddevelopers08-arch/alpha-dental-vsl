@@ -69,7 +69,7 @@ export default function SmileJourney() {
             Ready to understand the right treatment for your smile? Start with a clear, honest consultation tailored to you.
           </p> */}
           <button type="button" onClick={openBooking} className="mx-auto mt-6 inline-flex min-h-[56px] w-full max-w-[420px] items-center justify-center rounded-full bg-brand-rust px-6 py-3 font-sans text-[17px] font-semibold text-white transition hover:bg-brand-ink max-sm:text-[15px]">
-            Book Your Consultation &rarr;
+            Book Your Consultation 199 →
           </button>
           <p className="mt-3 font-sans text-[13px] italic leading-relaxed text-brand-ink/65 max-sm:text-xs">No pressure. No obligation. Just an honest plan for your teeth.</p>
         </div>

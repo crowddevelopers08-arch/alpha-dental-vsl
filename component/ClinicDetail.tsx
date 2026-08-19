@@ -61,7 +61,7 @@ export default function ClinicDetail() {
   }, [isMobileMuted, isDesktopMuted]);
 
   return (
-    <section id="clinic" className="bg-white px-5 py-16 sm:px-8 lg:px-12 lg:py-10">
+    <section id="clinic" className="bg-white px-5 py-8 sm:px-8 lg:px-12 lg:py-10">
       <div className="mx-auto grid max-w-[1650px] grid-cols-1 gap-10 xl:grid-cols-[620px_minmax(0,1fr)] xl:gap-[56px]">
         <div>
           <p className="mb-5 font-sans text-[15px] font-semibold tracking-[0.02em] text-brand-rust">
@@ -126,7 +126,7 @@ export default function ClinicDetail() {
               <span className="text-xl">☎</span> Call Now 8122200767
             </a>
             <button type="button" onClick={openBooking} className="inline-flex h-[47px] items-center gap-3 rounded-full bg-brand-rust px-6 text-[14px] font-semibold text-white transition hover:bg-brand-ink">
-              <span className="text-xl">▣</span> Book Appointment
+              <span className="text-xl">▣</span> Book Appointment 199 →
             </button>
           </div>
         </div>
