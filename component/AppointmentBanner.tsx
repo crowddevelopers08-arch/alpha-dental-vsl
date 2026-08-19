@@ -23,7 +23,7 @@ export default function AppointmentBanner() {
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4 sm:mt-12">
             <button type="button" onClick={openBooking} className="inline-flex h-[47px] items-center rounded-full border border-brand-rust bg-brand-rust px-6 max-sm:px-2 font-heading  text-[16px] font-semibold text-white transition hover:-translate-y-0.5 hover:bg-brand-ink">
-              Book Your Consultation 199→
+              Book Your Consultation 499→
             </button>
             <a href="tel:+918122200767" className="font-sans text-[14px] font-semibold text-brand-ink transition hover:text-brand-rust sm:text-[15px]">
                +91 8122200767 · Mon–Sat, 10 AM–8 PM

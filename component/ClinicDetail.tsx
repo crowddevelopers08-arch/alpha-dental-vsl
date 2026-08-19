@@ -106,7 +106,7 @@ export default function ClinicDetail() {
           </div>
 
           <p className="mt-6 max-w-[590px] font-sans text-[18px] leading-[1.65] text-brand-ink/75">
-           Watch a quick expert video to understand Dental Implants, Smile Design &amp; Root Canal treatments before making any decision.
+           Missing teeth, a broken smile, or a tooth that won't stop hurting? Watch this before you pick a dentist
           </p>
 
           <div className="mt-4 flex items-center gap-4">
@@ -126,7 +126,7 @@ export default function ClinicDetail() {
               <span className="text-xl">☎</span> Call Now 8122200767
             </a>
             <button type="button" onClick={openBooking} className="inline-flex h-[47px] items-center gap-3 rounded-full bg-brand-rust px-6 text-[14px] font-semibold text-white transition hover:bg-brand-ink">
-              <span className="text-xl">▣</span> Book Appointment 199 →
+              <span className="text-xl">▣</span> Book Appointment 499 →
             </button>
           </div>
         </div>
