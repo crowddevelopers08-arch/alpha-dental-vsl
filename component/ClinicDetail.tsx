@@ -69,7 +69,7 @@ export default function ClinicDetail() {
           </p>
 
           <h1 className="max-w-[610px] font-heading text-[38px] leading-[1.13] font-semibold tracking-[-1.15px] text-brand-ink max-sm:text-[32px]">
-            Missing teeth, a Broken Smile, or a Tooth That Won't Stop Hurting? Watch this before you pick a dentist.
+            Missing Teeth, A Broken Smile, or a Tooth That Won’t Stop Hurting? Watch This Before You Pick a Dentist.
           </h1>
 
           <div className="mt-7 overflow-hidden rounded-[14px] bg-white shadow-[0_8px_30px_rgba(58,46,41,0.12)] xl:hidden">
