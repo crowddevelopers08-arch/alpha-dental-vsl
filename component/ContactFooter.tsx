@@ -24,8 +24,7 @@ export default function ContactFooter() {
               <p>Plot Number 65, First Floor, Old Door Number 2/4, Thiruvenkadam Street, Chennai, Tamil Nadu 600028</p>
               <p className="mt-3 break-words font-semibold text-brand-rust">
                 <a href="tel:+918122200767">+91 81222 00767</a>
-                <span> | </span>
-                <a href="mailto:info@alphadentalstudios.com">info@alphadentalstudios.com</a>
+               
               </p>
             </address>
 
