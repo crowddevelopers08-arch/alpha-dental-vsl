@@ -7,6 +7,7 @@ import GoogleReviews from "@/component/GoogleReviews";
 import AppointmentBanner from "@/component/AppointmentBanner";
 import ScrollReveal from "@/component/ScrollReveal";
 import ContactFooter from "@/component/ContactFooter";
+import BeforeAfterCarousel from "@/component/BeforeAfterCarousel";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <ClinicDetail />
       <DentalExperts />
+      <BeforeAfterCarousel />
       <SmileJourney />
       <AiSmileBanner />
       <GoogleReviews />
