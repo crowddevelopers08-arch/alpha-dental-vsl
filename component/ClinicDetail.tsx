@@ -69,7 +69,7 @@ export default function ClinicDetail() {
           </p>
 
           <h1 className="max-w-[610px] font-heading text-[38px] leading-[1.13] font-semibold tracking-[-1.15px] text-brand-ink max-sm:text-[32px]">
-            Missing teeth, a broken smile, or a tooth that won&apos;t stop hurting? Watch this before you pick a dentist.
+            Missing teeth, a broken smile, or a tooth that won't stop hurting? Watch this before you pick a dentist.
           </h1>
 
           <div className="mt-7 overflow-hidden rounded-[14px] bg-white shadow-[0_8px_30px_rgba(58,46,41,0.12)] xl:hidden">
@@ -106,7 +106,7 @@ export default function ClinicDetail() {
           </div>
 
           <p className="mt-6 max-w-[590px] font-sans text-[18px] leading-[1.65] text-brand-ink/75">
-           Missing teeth, a broken smile, or a tooth that won't stop hurting? Watch this before you pick a dentist
+           Watch a quick expert video to understand Dental Implants, Smile Design &amp; Root Canal treatments before making any decision.
           </p>
 
           <div className="mt-4 flex items-center gap-4">
