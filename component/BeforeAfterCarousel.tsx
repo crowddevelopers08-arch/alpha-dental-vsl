@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const RESULTS = [
-  { src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787124956/unnamed_1.webp", alt: "Composite veneering smile transformation before and after treatment" },
+  { src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787124956/unnamed_6.webp", alt: "Patient dental transformation before and after treatment" },
   { src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787124956/unnamed_2.webp", alt: "Alpha Dental Studio patient smile before and after treatment" },
+  { src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787124956/unnamed_1.webp", alt: "Composite veneering smile transformation before and after treatment" },
   { src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787124956/unnamed_3.webp", alt: "Dental smile makeover before and after treatment" },
   { src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787124956/unnamed_4.webp", alt: "Patient dental transformation before and after treatment" },
   { src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787124956/unnamed_5.webp", alt: "Patient dental transformation before and after treatment" },
-  { src: "https://res.cloudinary.com/x6ec5hqm/image/upload/v1787124956/unnamed_6.webp", alt: "Patient dental transformation before and after treatment" },
 ] as const;
 
 export default function BeforeAfterCarousel() {
