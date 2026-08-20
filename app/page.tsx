@@ -1,6 +1,7 @@
 import Header from "@/component/Header";
 import ClinicDetail from "@/component/ClinicDetail";
 import DentalExperts from "@/component/DentalExperts";
+import OurTeam from "@/component/OurTeam";
 import AiSmileBanner from "@/component/AiSmileBanner";
 import SmileJourney from "@/component/SmileJourney";
 import GoogleReviews from "@/component/GoogleReviews";
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <ClinicDetail />
       <DentalExperts />
+      <OurTeam />
       <BeforeAfterCarousel />
       <SmileJourney />
       <AiSmileBanner />

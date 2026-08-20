@@ -77,7 +77,7 @@ export default function ClinicDetail() {
               <video
                 ref={mobileVideoRef}
                 className="absolute inset-0 h-full w-full object-cover"
-                src="/VSL.mp4"
+                src="/Alpha-Dental-VSL.mp4.mp4"
                 autoPlay
                 muted={isMobileMuted}
                 loop
@@ -112,7 +112,7 @@ export default function ClinicDetail() {
           <div className="mt-4 flex items-center gap-4">
             <span className="text-[18px] font-medium text-brand-rust">5.0 Average Rating</span>
             <div className="flex gap-2 text-[35px] leading-none text-[#ffbc4b]" aria-label="4.9 out of 5 stars">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span className="text-[#f1c900]">☆</span>
+              <span>★</span><span>★</span><span>★</span><span>★</span><span className="text-[#f1c900]">★</span>
             </div>
           </div>
 
