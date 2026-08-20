@@ -20,7 +20,7 @@ export default function ContactFooter() {
 
           <div className="max-w-[860px] space-y-5 text-[15px] leading-[1.65] sm:text-[17px] lg:text-[18px]">
             <address className="not-italic">
-              <h2 className="mb-1 font-heading text-[18px] font-bold sm:text-[20px]">RA Puram Branch</h2>
+              <h2 className="mb-1 font-heading text-[18px] font-bold sm:text-[20px]">RA Puram</h2>
               <p>Plot Number 65, First Floor, Old Door Number 2/4, Thiruvenkadam Street, Chennai, Tamil Nadu 600028</p>
               <p className="mt-3 break-words font-semibold text-brand-rust">
                 <a href="tel:+918122200767"><span>Phone Number:</span> +91 81222 00767</a>
