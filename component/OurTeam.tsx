@@ -37,7 +37,7 @@ export default function OurTeam() {
 
         <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[28px] border border-brand-rose/25 shadow-[0_24px_60px_rgba(58,46,41,.08)] xl:col-start-2 xl:row-start-1 xl:aspect-auto xl:h-[440px] xl:self-start">
           <Image
-            src="/team-1.png"
+            src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787294152/team-1.png"
             alt="The Alpha Dental Studio team of specialist dentists"
             fill
             className="object-cover object-top"

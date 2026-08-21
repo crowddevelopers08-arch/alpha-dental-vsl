@@ -33,7 +33,7 @@ export default function AppointmentBanner() {
 
         <div className="pointer-events-none absolute -top-[100px] right-[3.5%] z-20 hidden h-[418px] w-[330px] overflow-hidden rounded-t-[180px] xl:block 2xl:right-[6%]">
         <Image
-          src="/images-alpha.png"
+          src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787294152/images-alpha.png"
           alt="Friendly dentist ready for an appointment"
           width={1024}
           height={1536}
@@ -44,7 +44,7 @@ export default function AppointmentBanner() {
       </div>
 
       <div className="relative mx-auto mt-5 block max-w-[420px] overflow-hidden rounded-[24px] bg-brand-rose max-sm:pt-0 pt-5 xl:hidden">
-        <Image src="/images-alpha.png" alt="Friendly dentist" width={1024} height={1536} quality={95} className="mx-auto h-[390px] w-full object-cover object-top" />
+        <Image src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787294152/images-alpha.png" alt="Friendly dentist" width={1024} height={1536} quality={95} className="mx-auto h-[390px] w-full object-cover object-top" />
       </div>
     </section>
   );

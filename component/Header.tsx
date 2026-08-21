@@ -27,7 +27,7 @@ export default function Header() {
         <span className="relative size-18 shrink-0 overflow-hidden rounded-xl bg-[#fff8f4] max-[640px]:size-15">
           <Image
             className="object-contain p-1"
-            src="/logo_black_transparent.png"
+            src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787294145/logo_black_transparent.png"
             alt=""
             fill
             priority
@@ -35,7 +35,7 @@ export default function Header() {
         </span>
         <Image
           className="h-15 w-auto object-contain max-[640px]:h-14"
-          src="/alpha-dental-logo.png"
+          src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1787294146/alpha-dental-logo.png"
           alt="Alpha Dental Studio"
           width={2149}
           height={732}
