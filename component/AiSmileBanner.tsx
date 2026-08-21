@@ -27,7 +27,7 @@ export default function AiSmileBanner() {
             onClick={openBooking}
             className="mt-9 inline-flex h-[60px] w-full max-w-[460px] items-center justify-center rounded-full bg-brand-rust font-sans text-[17px] font-medium text-white transition hover:bg-brand-ink max-sm:h-[52px] max-sm:text-[15px]"
           >
-            Book Your Consultation 499 →
+            Book Your Consultation →
           </button>
         </div>
 

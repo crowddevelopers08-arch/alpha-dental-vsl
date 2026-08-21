@@ -31,7 +31,7 @@ export default function OurTeam() {
             onClick={openBooking}
             className="mt-7 hidden h-[52px] items-center justify-center rounded-full bg-brand-rust px-6 font-sans text-[15px] font-medium text-white transition hover:bg-brand-ink xl:inline-flex"
           >
-            Book Your Consultation 499 →
+            Book Your Consultation →
           </button>
         </div>
 
@@ -50,7 +50,7 @@ export default function OurTeam() {
           onClick={openBooking}
           className="inline-flex h-[52px] w-full max-w-[280px] items-center justify-center rounded-full bg-brand-rust px-6 font-sans text-[15px] font-medium text-white transition hover:bg-brand-ink xl:hidden"
         >
-          Book Your Consultation 499 →
+          Book Your Consultation →
         </button>
       </div>
     </section>

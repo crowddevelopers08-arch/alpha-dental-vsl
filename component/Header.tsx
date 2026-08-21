@@ -57,7 +57,7 @@ export default function Header() {
           onClick={openBooking}
           className="inline-flex h-[43px] min-w-[175px] items-center justify-center whitespace-nowrap rounded-full bg-brand-rust px-[15px] font-sans text-[15px] leading-none font-medium text-white no-underline max-[640px]:hidden"
         >
-          Book Appointment 499 →
+          Book Appointment →
         </button>
 
         <a

@@ -126,7 +126,7 @@ export default function ClinicDetail() {
               <span className="text-xl">☎</span> Call Now 8122200767
             </a>
             <button type="button" onClick={openBooking} className="inline-flex h-[47px] items-center gap-3 rounded-full bg-brand-rust px-6 text-[14px] font-semibold text-white transition hover:bg-brand-ink">
-              <span className="text-xl">▣</span> Book Appointment 499 →
+              <span className="text-xl">▣</span> Book Appointment →
             </button>
           </div>
         </div>
