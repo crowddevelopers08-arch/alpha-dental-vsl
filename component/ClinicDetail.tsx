@@ -77,7 +77,7 @@ export default function ClinicDetail() {
               <video
                 ref={mobileVideoRef}
                 className="absolute inset-0 h-full w-full object-cover"
-                src="/Alpha-Dental-VSL.mp4.mp4"
+                src="/Alpha-Dental-VSL.mp4"
                 autoPlay
                 muted={isMobileMuted}
                 loop
