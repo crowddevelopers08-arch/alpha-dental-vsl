@@ -18,18 +18,27 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-brand-rose/20 bg-white/95 font-sans text-brand-ink shadow-[0_6px_24px_rgba(58,46,41,.06)] backdrop-blur-md">
-      <div className="mx-auto grid h-[88px] max-w-[1650px] grid-cols-[153px_minmax(0,1fr)_auto] items-center gap-x-5 px-5 lg:px-8 max-[640px]:h-[72px] max-[640px]:grid-cols-[116px_1fr_auto] max-[640px]:gap-x-2.5 max-[640px]:px-3">
+      <div className="mx-auto grid h-[88px] max-w-[1650px] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-5 px-5 lg:px-8 max-[640px]:h-[72px] max-[640px]:grid-cols-[auto_1fr_auto] max-[640px]:gap-x-2.5 max-[640px]:px-3">
       <Link
-        className="grid h-[81px] w-[153px] -translate-y-px place-items-center overflow-hidden no-underline max-[640px]:h-[62px] max-[640px]:w-[116px]"
+        className="flex items-center gap-2.5 no-underline max-[640px]:gap-1.5"
         href="/"
         aria-label="Alpha Dental Studio home"
       >
+        <span className="relative size-18 shrink-0 overflow-hidden rounded-xl bg-[#fff8f4] max-[640px]:size-15">
+          <Image
+            className="object-contain p-1"
+            src="/logo_black_transparent.png"
+            alt=""
+            fill
+            priority
+          />
+        </span>
         <Image
-          className="h-auto w-[148px] object-contain max-[640px]:w-28"
-          src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786612784/alpha-logos.png"
+          className="h-15 w-auto object-contain max-[640px]:h-14"
+          src="/alpha-dental-logo.png"
           alt="Alpha Dental Studio"
-          width={532}
-          height={310}
+          width={2149}
+          height={732}
           priority
         />
       </Link>

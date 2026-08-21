@@ -14,16 +14,29 @@ export default function PageNavbar() {
         aria-label="Primary"
         className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8"
       >
-        <Link href="/" onClick={() => setOpen(false)} className="flex shrink-0 items-center">
+      <Link
+        className="flex items-center gap-2.5 no-underline max-[640px]:gap-1.5"
+        href="/"
+        aria-label="Alpha Dental Studio home"
+      >
+        <span className="relative size-18 shrink-0 overflow-hidden rounded-xl bg-[#fff8f4] max-[640px]:size-15">
           <Image
-            src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786612784/alpha-logos.png"
-            alt="Alpha Dental Studio"
-            width={187}
-            height={150}
+            className="object-contain p-1"
+            src="/logo_black_transparent.png"
+            alt=""
+            fill
             priority
-            className="h-20"
           />
-        </Link>
+        </span>
+        <Image
+          className="h-15 w-auto object-contain max-[640px]:h-14"
+          src="/alpha-dental-logo.png"
+          alt="Alpha Dental Studio"
+          width={2149}
+          height={732}
+          priority
+        />
+      </Link>
 
         {/* <ul className="hidden items-center gap-8 md:flex">
           {NAV_LINKS.map((link) => (
