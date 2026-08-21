@@ -26,7 +26,7 @@ export default function Header() {
       >
         <Image
           className="h-auto w-[148px] object-contain max-[640px]:w-28"
-          src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786612791/logos.png"
+          src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786612784/alpha-logos.png"
           alt="Alpha Dental Studio"
           width={532}
           height={310}

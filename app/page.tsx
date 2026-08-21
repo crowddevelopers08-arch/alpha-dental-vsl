@@ -17,8 +17,8 @@ export default function Home() {
       <Header />
       <ClinicDetail />
       <DentalExperts />
-      <OurTeam />
       <BeforeAfterCarousel />
+      <OurTeam />
       <SmileJourney />
       <AiSmileBanner />
       <GoogleReviews />

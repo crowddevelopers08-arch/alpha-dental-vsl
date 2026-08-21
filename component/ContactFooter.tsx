@@ -11,7 +11,7 @@ export default function ContactFooter() {
       <div className="grid min-h-[620px] lg:grid-cols-[57%_43%]">
         <div className="flex flex-col justify-center bg-gradient-to-br from-white to-[#f8f3f1] px-6 py-6 sm:px-12 lg:px-[72px] lg:py-12">
           <Image
-            src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786612791/logos.png"
+            src="https://res.cloudinary.com/x6ec5hqm/image/upload/v1786612784/alpha-logos.png"
             alt="Alpha Dental Studio"
             width={532}
             height={310}

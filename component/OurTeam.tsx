@@ -7,7 +7,7 @@ export default function OurTeam() {
   const { openBooking } = useBooking();
 
   return (
-    <section id="team" className="bg-white px-5 py-8 sm:px-8 lg:px-12 lg:py-20">
+    <section id="team" className="px-5 py-8 sm:px-8 lg:px-12 lg:py-20  bg-[#fff8f4]">
       <div className="mx-auto grid max-w-[1650px] grid-cols-1 gap-6 xl:grid-cols-[480px_minmax(0,1fr)] xl:gap-x-[56px]">
         <div className="xl:col-start-1 xl:row-start-1 xl:self-center">
           <p className="flex items-center gap-3 text-xs font-bold tracking-[3px] text-brand-rust uppercase">

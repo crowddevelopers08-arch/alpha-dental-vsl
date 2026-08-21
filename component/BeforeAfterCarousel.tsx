@@ -64,7 +64,7 @@ export default function BeforeAfterCarousel() {
     <section
       ref={sectionRef}
       aria-labelledby="smile-results-title"
-      className="overflow-hidden bg-[#fff8f4] py-8 sm:py-12"
+      className="overflow-hidden py-8 sm:py-12"
     >
       <div className="mx-auto w-[min(1320px,92vw)]">
         <div className="relative mb-7 sm:mb-9">

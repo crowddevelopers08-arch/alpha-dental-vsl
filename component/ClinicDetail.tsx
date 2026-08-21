@@ -135,7 +135,7 @@ export default function ClinicDetail() {
           <video
             ref={desktopVideoRef}
             className="h-full w-full object-cover"
-            src="/VSL.mp4"
+            src="/Alpha-Dental-VSL.mp4"
             autoPlay
             muted={isDesktopMuted}
             loop
