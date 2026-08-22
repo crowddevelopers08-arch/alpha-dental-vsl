@@ -25,6 +25,18 @@ export default function ThankYouPage() {
     <>
       <PageNavbar />
 
+      {/* Google Ads Conversion Tracking */}
+      <Script
+        id="google-ads-submit-lead-conversion"
+        strategy="afterInteractive"
+      >
+        {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-18329828984/fd2dCJz5vuUcEPj8q6RE'
+          });
+        `}
+      </Script>
+
       <main>
         <section className="relative isolate px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div
