@@ -1,6 +1,15 @@
 import PageNavbar from "@/component/PageNavbar";
 import Link from "next/link";
 import Script from "next/script";
+import Head from "next/head";
+import { useEffect } from "react";
+
+// Extend Window interface
+declare global {
+  interface Window {
+    gtag: (command: string, targetId: string, params?: Record<string, any>) => void;
+  }
+}
 
 const nextSteps = [
   {
@@ -21,9 +30,46 @@ const nextSteps = [
 ];
 
 export default function ThankYouPage() {
+  useEffect(() => {
+    const trackConversion = () => {
+      try {
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'conversion', {
+            'send_to': 'AW-18329828984/fd2dCJz5vuUcEPj8q6RE'
+          });
+        }
+      } catch (error) {
+        console.error('Conversion tracking failed:', error);
+      }
+    };
+
+    // Small delay to ensure gtag is loaded
+    const timeoutId = setTimeout(trackConversion, 500);
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
     <>
-      <PageNavbar />
+      <Head>
+        <title>Thank You | Alpha Dental Studio - RA Puram, Chennai</title>
+        <meta name="robots" content="noindex" />
+        <meta name="description" content="Thank you for choosing Alpha Dental Studio. Your consultation request has been received. We'll contact you shortly." />
+      </Head>
+
+      {/* Google Ads Conversion Tracking */}
+      <Script
+        id="gtag-conversion"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            if (typeof gtag === 'function') {
+              gtag('event', 'conversion', {
+                'send_to': 'AW-18329828984/fd2dCJz5vuUcEPj8q6RE'
+              });
+            }
+          `
+        }}
+      />
 
       <main>
         <section className="relative isolate px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
