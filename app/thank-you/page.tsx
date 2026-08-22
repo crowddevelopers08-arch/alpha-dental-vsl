@@ -1,3 +1,5 @@
+"use client"
+
 import PageNavbar from "@/component/PageNavbar";
 import Link from "next/link";
 import Script from "next/script";
