@@ -64,11 +64,11 @@ export default function ClinicDetail() {
     <section id="clinic" className="bg-white px-5 py-8 sm:px-8 lg:px-12 lg:py-10">
       <div className="mx-auto grid max-w-[1650px] grid-cols-1 gap-10 xl:grid-cols-[620px_minmax(0,1fr)] xl:gap-[56px]">
         <div>
-          <p className="mb-5 font-sans text-[15px] font-semibold tracking-[0.02em] text-brand-rust">
+          <p className="mb-5 font-sans text-[15px] max-sm:text-[14px] font-semibold tracking-[0.02em] text-brand-rust">
             Alpha Dental Studio · RA Puram, Chennai
           </p>
 
-          <h1 className="max-w-[610px] font-heading text-[38px] leading-[1.13] font-semibold tracking-[-1.15px] text-brand-ink max-sm:text-[32px]">
+          <h1 className="max-w-[610px] font-heading text-[38px] leading-[1.13] font-semibold tracking-[-1.15px] text-brand-ink max-sm:text-[25px]">
             Missing Teeth, A Broken Smile, or a Tooth That Won’t Stop Hurting? Watch This Before You Pick a Dentist.
           </h1>
 
@@ -105,23 +105,23 @@ export default function ClinicDetail() {
             </div>
           </div>
 
-          <p className="mt-6 max-w-[590px] font-sans text-[18px] leading-[1.65] text-brand-ink/75">
+          <p className="mt-6 max-w-[590px] font-sans max-sm:text-[15px] text-[18px] leading-[1.65] text-brand-ink/75">
            Watch a quick expert video to understand Dental Implants, Smile Design &amp; Root Canal treatments before making any decision.
           </p>
 
-          <div className="mt-4 flex items-center gap-4">
-            <span className="text-[18px] font-medium text-brand-rust">5.0 Average Rating</span>
-            <div className="flex gap-2 text-[35px] leading-none text-[#ffbc4b]" aria-label="4.9 out of 5 stars">
+          <div className="mt-4 max-sm:mt-2 flex items-center gap-4">
+            <span className="text-[18px] max-sm:text-[16px] font-medium text-brand-rust">5.0 Average Rating</span>
+            <div className="flex gap-2 text-[35px] max-sm:text-[25px] leading-none text-[#ffbc4b]" aria-label="4.9 out of 5 stars">
               <span>★</span><span>★</span><span>★</span><span>★</span><span className="text-[#f1c900]">★</span>
             </div>
           </div>
 
-          <div className="mt-5 space-y-5 text-[17px] text-brand-ink">
-            <div className="flex items-center gap-4"><ClockIcon /><span>10:00:00 - 08:00:00 <b className="font-semibold">(Closed on Sun)</b></span></div>
-            <div className="flex items-start gap-4"><PinIcon /><div><p>Plot Number 65, First Floor, Old Door Number 2/4, Thiruvengadam Street, Chennai, Tamil Nadu 600028</p></div></div>
+          <div className="mt-5 max-sm:mt-3 space-y-5 text-[17px] text-brand-ink">
+            <div className="flex items-center gap-4 max-sm:text-[15px] max-sm:mb-2"><ClockIcon /><span>10:00:00 - 08:00:00 <b className="font-semibold">(Closed on Sun)</b></span></div>
+            <div className="flex items-start gap-4 max-sm:text-[15px]"><PinIcon /><div><p>Plot Number 65, First Floor, Old Door Number 2/4, Thiruvengadam Street, Chennai, Tamil Nadu 600028</p></div></div>
           </div>
 
-          <div className="mt-6 flex flex-wrap items-center gap-8 sm:gap-[15px]">
+          <div className="mt-6 flex flex-wrap items-center gap-3 sm:gap-[15px]">
             <a href="tel:+918122200767" className="inline-flex h-[47px] items-center gap-3 rounded-full border border-brand-rust px-5 text-[14px] font-semibold text-brand-ink transition hover:bg-brand-rust hover:text-white">
               <span className="text-xl">☎</span> Call Now 8122200767
             </a>
