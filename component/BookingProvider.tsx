@@ -65,7 +65,7 @@ export default function BookingProvider({ children }: { children: ReactNode }) {
           procedure: consultationType,
           message: `Appointment date: ${selectedDate}\nAppointment time: ${selectedTime}\nConsultation type: ${consultationType}`,
           source: "Alpha Dental Website",
-          formName: "Alpha Dental Appointment",
+          formName: "Alpha-Dental-Appointment",
           status: "new",
           consent: true,
           pageUrl: window.location.href,
